@@ -201,7 +201,16 @@ function App() {
         <div className="container px-4 py-8 md:px-8">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-sm text-muted-foreground">
-              © 2026 MrTEK Softwares. All rights reserved.
+              © 2026{' '}
+              <a
+                href="https://mrtek.com.tr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                MrTEK Softwares
+              </a>
+              . All rights reserved.
             </p>
             <div className="flex gap-4">
               <a
