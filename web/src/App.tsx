@@ -1,4 +1,4 @@
-import { useTheme } from 'widgetz';
+import { useTheme } from 'widgetz'
 import {
   Button,
   Card,
@@ -7,11 +7,11 @@ import {
   CardDescription,
   CardContent,
   CardFooter,
-} from 'widgetz';
-import 'widgetz/styles.css';
+} from 'widgetz'
+import 'widgetz/styles.css'
 
 function ThemeToggle() {
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme()
 
   return (
     <Button
@@ -21,7 +21,7 @@ function ThemeToggle() {
     >
       {theme === 'dark' ? '🌞' : '🌙'}
     </Button>
-  );
+  )
 }
 
 function App() {
@@ -233,7 +233,7 @@ function App() {
         </div>
       </footer>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

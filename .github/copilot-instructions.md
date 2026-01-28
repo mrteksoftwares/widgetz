@@ -1,14 +1,17 @@
 # widgetz Projesi
 
 ## Proje Amacı
+
 React + TypeScript + Tailwind CSS + Radix UI/shadcn teknolojileri kullanarak yeniden kullanılabilir widget ve component kütüphanesi geliştiriyoruz.
 
 ## Kullanım Senaryoları
+
 - React projelerinin dashboard'larında doğrudan import ile kullanım
 - WordPress sayfalarında iframe içinde embed edilebilme
 - Dark/light tema desteği (color-scheme)
 
 ## Teknoloji Stack
+
 - **React.js** - UI kütüphanesi
 - **TypeScript** - Type safety
 - **Tailwind CSS** - Styling
@@ -17,11 +20,13 @@ React + TypeScript + Tailwind CSS + Radix UI/shadcn teknolojileri kullanarak yen
 - **MIT License** - Açık kaynak
 
 ## NPM Paketi
+
 - **Paket adı:** `widgetz` (scoped değil)
 - **Dağıtım:** npmjs.org
 - **Format:** ESM (React projeleri) + UMD/IIFE (WordPress iframe)
 
 ## Kurulum Planı
+
 1. ✅ Proje planını kaydet
 2. ✅ Proje temelini kur (package.json, TypeScript, React, Tailwind, Vite)
 3. ✅ Tema sistemini oluştur (CSS variables, context provider)
@@ -32,6 +37,7 @@ React + TypeScript + Tailwind CSS + Radix UI/shadcn teknolojileri kullanarak yen
 8. ⏳ Tanıtım web sitesi (web/ klasörü)
 
 ## Proje Yapısı
+
 ```
 widgetz/
 ├── .github/
@@ -67,6 +73,7 @@ widgetz/
 ```
 
 ## Tanıtım Web Sitesi (web/)
+
 - **Teknoloji:** React + Vite + TypeScript + Tailwind CSS
 - **Port:** 4900 (static)
 - **Tema:** Dark/Light mode desteği
@@ -77,6 +84,7 @@ widgetz/
 - **NOT:** `web/` klasörü npm paketine dahil edilmez (.npmignore)
 
 ## Development Commands
+
 ```bash
 # NPM Paketi
 npm install          # Dependencies yükle
@@ -93,6 +101,7 @@ npm run build        # Web build
 ```
 
 ## Widget Geliştirme Kuralları
+
 1. Her widget TypeScript ile yazılmalı
 2. Props interface'i export edilmeli
 3. Dark/light tema desteklemeli
