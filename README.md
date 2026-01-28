@@ -1,5 +1,10 @@
 # widgetz
 
+[![npm version](https://img.shields.io/npm/v/widgetz.svg?style=flat-square)](https://www.npmjs.com/package/widgetz)
+[![npm downloads](https://img.shields.io/npm/dm/widgetz.svg?style=flat-square)](https://www.npmjs.com/package/widgetz)
+[![license](https://img.shields.io/npm/l/widgetz.svg?style=flat-square)](https://github.com/mrteksoftwares/widgetz/blob/main/LICENSE)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/widgetz?style=flat-square)](https://bundlephobia.com/package/widgetz)
+
 **widgetz** - Modern, customizable React widget library with TypeScript, Tailwind CSS, and Radix UI.
 
 ## 🚀 Features
@@ -137,7 +142,6 @@ import {
   CardContent,
   CardFooter,
 } from "widgetz"
-
 ;<Card>
   <CardHeader>
     <CardTitle>Card Title</CardTitle>
@@ -162,7 +166,7 @@ All components accept `className` prop for custom styling:
 
 ## 📝 License
 
-MIT © [Mr.TEK Softwares](https://github.com/mrtek)
+MIT © [Mr.TEK Softwares](https://github.com/mrteksoftwares)
 
 ## 🤝 Contributing
 
@@ -170,6 +174,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 🔗 Links
 
-- [GitHub Repository](https://github.com/mrtek/widgetz)
+- [GitHub Repository](https://github.com/mrteksoftwares/widgetz)
 - [NPM Package](https://www.npmjs.com/package/widgetz)
-- [Issues](https://github.com/mrtek/widgetz/issues)
+- [Issues](https://github.com/mrteksoftwares/widgetz/issues)

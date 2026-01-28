@@ -1,9 +1,17 @@
 {
   "name": "widgetz",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ReactJS Widget Component Library with Tailwind CSS, TypeScript, and Radix UI",
   "author": "Mr.TEK Softwares",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrteksoftwares/widgetz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrteksoftwares/widgetz/issues"
+  },
+  "homepage": "https://github.com/mrteksoftwares/widgetz#readme",
   "keywords": [
     "react",
     "widgets",

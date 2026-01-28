@@ -23,19 +23,20 @@ React + TypeScript + Tailwind CSS + Radix UI/shadcn teknolojileri kullanarak yen
 
 ## Kurulum Planı
 1. ✅ Proje planını kaydet
-2. ⏳ Proje temelini kur (package.json, TypeScript, React, Tailwind, Vite)
-3. ⏳ Tema sistemini oluştur (CSS variables, context provider)
-4. ⏳ shadcn/Radix UI entegrasyonu
-5. ⏳ İlk örnek widget'lar (Button, Card)
-6. ⏳ Build konfigürasyonu (ESM + UMD)
-7. ⏳ NPM'e publish
+2. ✅ Proje temelini kur (package.json, TypeScript, React, Tailwind, Vite)
+3. ✅ Tema sistemini oluştur (CSS variables, context provider)
+4. ✅ shadcn/Radix UI entegrasyonu
+5. ✅ İlk örnek widget'lar (Button, Card)
+6. ✅ Build konfigürasyonu (ESM + UMD)
+7. ✅ NPM'e publish
+8. ⏳ Tanıtım web sitesi (web/ klasörü)
 
 ## Proje Yapısı
 ```
 widgetz/
 ├── .github/
 │   └── copilot-instructions.md
-├── src/
+├── src/                    # NPM paketi kaynak kodu
 │   ├── components/          # Widget'lar
 │   │   ├── ui/             # shadcn base components
 │   │   ├── Button/
@@ -48,9 +49,14 @@ widgetz/
 │   │   └── themes.css
 │   ├── providers/          # Theme provider
 │   └── index.ts            # Main export
-├── dist/                   # Build output
+├── dist/                   # Build output (NPM'e gider)
 │   ├── esm/
 │   └── umd/
+├── web/                    # Tanıtım sitesi (NPM'e GİTMEZ)
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── vite.config.ts
 ├── package.json
 ├── tsconfig.json
 ├── vite.config.ts
@@ -60,13 +66,30 @@ widgetz/
 └── README.md
 ```
 
+## Tanıtım Web Sitesi (web/)
+- **Teknoloji:** React + Vite + TypeScript + Tailwind CSS
+- **Port:** 4900 (static)
+- **Tema:** Dark/Light mode desteği
+- **Copyright:** MrTEK Softwares
+- **Amaç:** shadcn/ui tarzında component showcase ve dokümantasyon
+- **Dil:** Tamamen İngilizce
+- **Deploy:** GitHub Pages / Vercel
+- **NOT:** `web/` klasörü npm paketine dahil edilmez (.npmignore)
+
 ## Development Commands
 ```bash
+# NPM Paketi
 npm install          # Dependencies yükle
 npm run dev          # Development mode
 npm run build        # Production build
 npm run preview      # Build preview
 npm publish          # NPM'e publish
+
+# Web Sitesi
+cd web
+npm install          # Web dependencies
+npm run dev          # Web dev server (port 4900)
+npm run build        # Web build
 ```
 
 ## Widget Geliştirme Kuralları
