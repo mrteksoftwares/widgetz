@@ -71,7 +71,7 @@ function App() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Button size="lg">Get Started</Button>
             <Button variant="outline" size="lg">
-              View Components
+              View Widgets
             </Button>
           </div>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground">
@@ -201,7 +201,7 @@ function App() {
         <div className="container px-4 py-8 md:px-8">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-sm text-muted-foreground">
-              © 2026{' '}
+              © 2014-2026{' '}
               <a
                 href="https://mrtek.com.tr"
                 target="_blank"

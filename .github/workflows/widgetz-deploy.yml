@@ -5,10 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "dist/kernel/**"
-      - "dist/adminpanel/**"
-      - "dist/client/**"
-
+      - "web/dist/**"
   workflow_dispatch:
 
 jobs:
