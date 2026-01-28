@@ -62,7 +62,7 @@ function App() {
       <section className="container px-4 py-24 md:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-            Modern React Widget Library
+            Widgetz is a Modern React Widget Library
           </h2>
           <p className="mt-6 text-lg text-muted-foreground">
             Build beautiful, accessible interfaces with widgetz. A collection of
