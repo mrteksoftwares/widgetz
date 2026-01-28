@@ -1,5 +1,20 @@
 # widgetz Projesi
 
+## Proje İsmi ve Domain
+
+- **Proje İsmi:** `widgetz` (z ile biter) - **ASLA ~~widgets~~ KULLANMA!**
+- **NPM Paketi:** `widgetz`
+- **Domain:** https://widgetz.mrtek.com.tr (HTTPS)
+- **GitHub Repo:** https://github.com/mrteksoftwares/widgetz
+- **NPM Package:** https://www.npmjs.com/package/widgetz
+
+## Önemli Kurallar
+
+- ⚠️ Proje ismini yazarken veya kodda kullanırken her zaman `widgetz` yaz
+- ⚠️ Dokümantasyonda, README'de, açıklamalarda `widgetz` kullan
+- ⚠️ URL'lerde, subdomain'lerde `widgetz` kullan
+- ⚠️ ASLA "widgets" yazma!
+
 ## Proje Amacı
 
 React + TypeScript + Tailwind CSS + Radix UI/shadcn teknolojileri kullanarak yeniden kullanılabilir widget ve component kütüphanesi geliştiriyoruz.
