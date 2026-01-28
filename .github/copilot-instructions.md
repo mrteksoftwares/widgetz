@@ -4,7 +4,7 @@
 
 - **Proje İsmi:** `widgetz` (z ile biter) - **ASLA ~~widgets~~ KULLANMA!**
 - **NPM Paketi:** `widgetz`
-- **Domain:** https://widgetz.mrtek.com.tr (HTTPS)
+- **Domain:** https://widgetz.mr1.com.tr (HTTPS)
 - **GitHub Repo:** https://github.com/mrteksoftwares/widgetz
 - **NPM Package:** https://www.npmjs.com/package/widgetz
 
@@ -123,3 +123,24 @@ npm run build        # Web build
 4. Tailwind classes kullanmalı
 5. Radix UI primitives tercih edilmeli
 6. Tree-shaking için named export kullanılmalı
+
+## Versiyonlama ve Release
+
+- **Otomatik:** semantic-release kullanılıyor
+- **Commit Format:** Conventional Commits (feat, fix, docs, etc.)
+- **Workflow:** Commit → Push → GitHub Actions → Auto Publish
+
+### Commit Örnekleri:
+
+```bash
+# PATCH: 0.1.1 → 0.1.2
+git commit -m "fix: button hover bug"
+
+# MINOR: 0.1.1 → 0.2.0
+git commit -m "feat: add Input component"
+
+# MAJOR: 0.1.1 → 1.0.0
+git commit -m "feat!: change Button API"
+```
+
+Detaylar: [CONTRIBUTING.md](../CONTRIBUTING.md)

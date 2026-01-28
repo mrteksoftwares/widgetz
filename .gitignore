@@ -1,5 +1,5 @@
 node_modules
-dist
+/dist
 .DS_Store
 *.log
 .vscode
@@ -8,3 +8,7 @@ coverage
 .env
 .env.local
 .env.*.local
+
+# Allow web/dist for GitHub Pages deployment
+!web/dist/
+
