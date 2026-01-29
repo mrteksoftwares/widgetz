@@ -12,3 +12,7 @@ coverage
 # Allow web/dist for GitHub Pages deployment
 !web/dist/
 
+/.temp
+/temp
+*.tmp
+* copy*
