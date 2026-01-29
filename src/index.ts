@@ -17,5 +17,9 @@ export {
   CardContent,
 } from './components/ui/Card'
 
+// Widgets
+export { MoonCalendar, calculateMoonPhase } from './components/ui/MoonCalendar'
+export type { MoonCalendarProps, MoonPhase } from './components/ui/MoonCalendar'
+
 // Export styles
 import './styles/globals.css'

@@ -7,6 +7,7 @@ import {
   CardDescription,
   CardContent,
   CardFooter,
+  MoonCalendar,
 } from 'widgetz'
 import 'widgetz/styles.css'
 
@@ -164,6 +165,32 @@ function App() {
                     Cancel
                   </Button>
                 </CardFooter>
+              </Card>
+            </div>
+          </div>
+
+          {/* Moon Calendar Widget */}
+          <div className="mb-12">
+            <h4 className="mb-4 text-2xl font-semibold">🌙 Moon Calendar</h4>
+            <p className="mb-4 text-muted-foreground">
+              Interactive lunar calendar showing moon phases for any date. 
+              Shows current phase, illumination percentage, and phase name.
+            </p>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <MoonCalendar size="md" variant="minimal" />
+              <MoonCalendar size="md" variant="default" />
+              <Card>
+                <CardHeader>
+                  <CardTitle>Moon Calendar Features</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-2 text-sm text-muted-foreground">
+                  <p>✅ Accurate moon phase calculation</p>
+                  <p>✅ Interactive calendar navigation</p>
+                  <p>✅ Visual moon phase representation</p>
+                  <p>✅ Dark/Light theme compatible</p>
+                  <p>✅ Multiple variants (default, minimal, glass)</p>
+                  <p>✅ Multiple size options (sm, md, lg, xl)</p>
+                </CardContent>
               </Card>
             </div>
           </div>
