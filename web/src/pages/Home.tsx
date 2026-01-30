@@ -12,7 +12,7 @@ export function Home() {
           </h2>
           <p className="mt-6 text-lg text-muted-foreground">
             Modern React widget library. Beautiful, reusable components built with
-            TypeScript, Tailwind CSS, and Radix UI. ++
+            TypeScript, Tailwind CSS, and Radix UI. +++
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Link to="/components/button">
