@@ -8,6 +8,7 @@ import {
   CardContent,
   CardFooter,
   RandomNumber,
+  Numerology,
 } from 'widgetz'
 import { CodeBlock } from '../components/CodeBlock'
 
@@ -29,6 +30,12 @@ const widgets = [
     name: 'Random Number',
     description: 'Generate random numbers within a range',
     tags: ['#eğlence', '#oyun', '#rastgele']
+  },
+  {
+    id: 'numerology',
+    name: 'Numerology',
+    description: 'Calculate personality number from birth date',
+    tags: ['#numeroloji', '#kişilik', '#analiz', '#mistik']
   },
 ]
 
@@ -77,6 +84,14 @@ function MyComponent() {
       defaultMax={100}
       onGenerate={(num) => console.log('Generated:', num)}
     />
+  )
+}`,
+  numerology: `import { Numerology } from 'widgetz'
+import 'widgetz/styles.css'
+
+function MyComponent() {
+  return (
+    <Numerology className="max-w-md mx-auto" />
   )
 }`
 }
@@ -256,6 +271,37 @@ export function ComponentPage() {
             <CardFooter className="flex-col items-start">
               <h4 className="mb-2 text-sm font-medium">Code</h4>
               <CodeBlock code={codeExamples['random-number']} />
+            </CardFooter>
+          </Card>
+        )}
+
+        {componentId === 'numerology' && (
+          <Card>
+            <CardHeader>
+              <div className="flex items-start justify-between">
+                <div>
+                  <CardTitle>Numerology Analysis</CardTitle>
+                  <CardDescription>
+                    {widget.description}
+                  </CardDescription>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {widget.tags.map(tag => (
+                    <span key={tag} className="rounded-md bg-primary/10 px-2 py-1 text-xs text-primary">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="flex justify-center">
+                <Numerology />
+              </div>
+            </CardContent>
+            <CardFooter className="flex-col items-start">
+              <h4 className="mb-2 text-sm font-medium">Code</h4>
+              <CodeBlock code={codeExamples['numerology']} />
             </CardFooter>
           </Card>
         )}

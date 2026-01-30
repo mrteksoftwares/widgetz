@@ -24,5 +24,7 @@ export type { RandomNumberProps } from './components/RandomNumber'
 export { MoonCalendar, calculateMoonPhase } from './components/ui/MoonCalendar'
 export type { MoonCalendarProps, MoonPhase } from './components/ui/MoonCalendar'
 
+export { Numerology } from './components/Numerology'
+
 // Export styles
 import './styles/globals.css'
