@@ -3,11 +3,10 @@ import { Button } from 'widgetz'
 
 interface CodeBlockProps {
   code: string
-  language?: string
   preview?: boolean
 }
 
-export function CodeBlock({ code, language = 'tsx', preview = true }: CodeBlockProps) {
+export function CodeBlock({ code, preview = true }: CodeBlockProps) {
   const [isExpanded, setIsExpanded] = useState(false)
   const [copied, setCopied] = useState(false)
 
