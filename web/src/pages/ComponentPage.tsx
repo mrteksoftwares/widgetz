@@ -8,6 +8,7 @@ import {
   CardContent,
   CardFooter,
   RandomNumber,
+  MoonCalendar,
 } from 'widgetz'
 import { CodeBlock } from '../components/CodeBlock'
 
@@ -29,6 +30,12 @@ const widgets = [
     name: 'Random Number',
     description: 'Generate random numbers within a range',
     tags: ['#eğlence', '#oyun', '#rastgele']
+  },
+  {
+    id: 'moon-calendar',
+    name: 'Moon Calendar',
+    description: 'Interactive moon phase calendar with visual representation',
+    tags: ['#görsel', '#takvim', '#ay-fazı']
   },
 ]
 
@@ -78,6 +85,30 @@ function MyComponent() {
       onGenerate={(num) => console.log('Generated:', num)}
     />
   )
+}`,
+  'moon-calendar': `import { MoonCalendar } from 'widgetz'
+import 'widgetz/styles.css'
+
+function MyComponent() {
+  return (
+    <div>
+      {/* Default variant */}
+      <MoonCalendar />
+      
+      {/* With custom size and details */}
+      <MoonCalendar 
+        size="lg"
+        showDetails={true}
+        onDateChange={(date, phase) => console.log(date, phase)}
+      />
+      
+      {/* Minimal variant */}
+      <MoonCalendar 
+        variant="minimal"
+        size="sm"
+      />
+    </div>
+  )
 }`
 }
 
@@ -112,8 +143,8 @@ export function ComponentPage() {
             <Link key={w.id} to={`/components/${w.id}`}>
               <button
                 className={`w-full rounded-md px-3 py-2 text-left text-sm transition-colors hover:bg-accent ${componentId === w.id
-                    ? 'bg-accent font-medium text-accent-foreground'
-                    : 'text-muted-foreground'
+                  ? 'bg-accent font-medium text-accent-foreground'
+                  : 'text-muted-foreground'
                   }`}
               >
                 {w.name}
@@ -256,6 +287,64 @@ export function ComponentPage() {
             <CardFooter className="flex-col items-start">
               <h4 className="mb-2 text-sm font-medium">Code</h4>
               <CodeBlock code={codeExamples['random-number']} />
+            </CardFooter>
+          </Card>
+        )}
+
+        {componentId === 'moon-calendar' && (
+          <Card>
+            <CardHeader>
+              <div className="flex items-start justify-between">
+                <div>
+                  <CardTitle>Moon Calendar</CardTitle>
+                  <CardDescription>
+                    {widget.description}
+                  </CardDescription>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {widget.tags.map(tag => (
+                    <span key={tag} className="rounded-md bg-primary/10 px-2 py-1 text-xs text-primary">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent className="space-y-8">
+              <div>
+                <h4 className="mb-4 text-sm font-medium">Variants</h4>
+                <div className="grid gap-6 md:grid-cols-2">
+                  <div>
+                    <p className="text-xs text-muted-foreground mb-2">Default</p>
+                    <MoonCalendar showDetails={true} />
+                  </div>
+                  <div>
+                    <p className="text-xs text-muted-foreground mb-2">Minimal</p>
+                    <MoonCalendar variant="minimal" showDetails={true} />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h4 className="mb-4 text-sm font-medium">Sizes</h4>
+                <div className="flex flex-wrap items-end gap-6">
+                  <div>
+                    <p className="text-xs text-muted-foreground mb-2">Small</p>
+                    <MoonCalendar size="sm" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-muted-foreground mb-2">Medium</p>
+                    <MoonCalendar size="md" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-muted-foreground mb-2">Large</p>
+                    <MoonCalendar size="lg" />
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+            <CardFooter className="flex-col items-start">
+              <h4 className="mb-2 text-sm font-medium">Code</h4>
+              <CodeBlock code={codeExamples['moon-calendar']} />
             </CardFooter>
           </Card>
         )}
