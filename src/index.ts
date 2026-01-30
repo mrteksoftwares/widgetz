@@ -17,5 +17,8 @@ export {
   CardContent,
 } from './components/ui/Card'
 
+export { RandomNumber } from './components/RandomNumber'
+export type { RandomNumberProps } from './components/RandomNumber'
+
 // Export styles
 import './styles/globals.css'
